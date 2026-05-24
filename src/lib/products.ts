@@ -4,19 +4,47 @@ import wallet from "@/assets/product-wallet.jpg";
 import bottle from "@/assets/product-bottle.jpg";
 import sneakers from "@/assets/product-sneakers.jpg";
 import watch from "@/assets/product-watch.jpg";
+import pen from "@/assets/product-pen.jpg";
+import scarf from "@/assets/product-scarf.jpg";
+import perfume from "@/assets/product-perfume.jpg";
+import bag from "@/assets/product-bag.jpg";
+import sunglasses from "@/assets/product-sunglasses.jpg";
+import candle from "@/assets/product-candle.jpg";
 
 export type Product = {
   id: string;
   name: string;
   price: number;
   image: string;
-  category: "Audio" | "Lifestyle" | "Accessories" | "Apparel";
+  category: "Audio" | "Lifestyle" | "Accessories" | "Apparel" | "Fragrance" | "Stationery";
   description: string;
   rating: number;
   badge?: string;
 };
 
 export const products: Product[] = [
+  {
+    id: "noir-perfume",
+    name: "Noir Eau de Parfum",
+    price: 2890000,
+    image: perfume,
+    category: "Fragrance",
+    description:
+      "Amber, oud, and Tonka bean. A signature scent crafted in Grasse — 50ml extrait concentration.",
+    rating: 4.9,
+    badge: "Signature",
+  },
+  {
+    id: "north-watch",
+    name: "North Leather Smartwatch",
+    price: 3290000,
+    image: watch,
+    category: "Accessories",
+    description:
+      "Hand-stitched Italian leather strap with always-on AMOLED display and 14-day battery life.",
+    rating: 4.8,
+    badge: "New",
+  },
   {
     id: "aria-headphones",
     name: "Aria Wireless Headphones",
@@ -29,15 +57,56 @@ export const products: Product[] = [
     badge: "Bestseller",
   },
   {
-    id: "north-watch",
-    name: "North Leather Smartwatch",
-    price: 3290000,
-    image: watch,
+    id: "atelier-bag",
+    name: "Atelier Weekend Bag",
+    price: 4590000,
+    image: bag,
     category: "Accessories",
     description:
-      "Hand-stitched Italian leather strap with always-on AMOLED display and 14-day battery life.",
+      "Full-grain Tuscan leather, brass hardware, suede-lined interior. Made to outlive trends.",
+    rating: 4.9,
+    badge: "Heirloom",
+  },
+  {
+    id: "cashmere-scarf",
+    name: "Camel Cashmere Scarf",
+    price: 1890000,
+    image: scarf,
+    category: "Apparel",
+    description:
+      "Grade-A Mongolian cashmere, fringed edges. Featherweight warmth with a buttery hand-feel.",
     rating: 4.8,
+  },
+  {
+    id: "lumen-pen",
+    name: "Lumen Fountain Pen",
+    price: 1290000,
+    image: pen,
+    category: "Stationery",
+    description:
+      "Lacquered brass body with 18k gold nib. Threaded converter included for bottled ink.",
+    rating: 4.7,
     badge: "New",
+  },
+  {
+    id: "halcyon-sunglasses",
+    name: "Halcyon Sunglasses",
+    price: 1690000,
+    image: sunglasses,
+    category: "Accessories",
+    description:
+      "Acetate tortoiseshell frames with polarized mineral glass lenses. UV400, hand-finished in Italy.",
+    rating: 4.7,
+  },
+  {
+    id: "ember-candle",
+    name: "Ember Soy Candle",
+    price: 390000,
+    image: candle,
+    category: "Lifestyle",
+    description:
+      "Amber, vetiver, and warm cedar. 60-hour burn, hand-poured in small batches.",
+    rating: 4.8,
   },
   {
     id: "kira-sneakers",
@@ -81,7 +150,15 @@ export const products: Product[] = [
   },
 ];
 
-export const categories = ["All", "Audio", "Accessories", "Apparel", "Lifestyle"] as const;
+export const categories = [
+  "All",
+  "Fragrance",
+  "Accessories",
+  "Apparel",
+  "Audio",
+  "Lifestyle",
+  "Stationery",
+] as const;
 
 export const formatIDR = (n: number) =>
   new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 }).format(n);

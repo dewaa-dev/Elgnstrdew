@@ -3,12 +3,12 @@ export function Footer() {
     <footer className="border-t border-border/60 mt-32">
       <div className="container-page py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2">
-            <div className="size-7 rounded-md bg-primary" />
-            <span className="font-display text-2xl">Nordal</span>
+          <div className="flex items-center gap-2.5">
+            <span className="size-7 rounded-full bg-gold shadow-gold" />
+            <span className="font-display text-2xl tracking-tight">Elgnstr</span>
           </div>
-          <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            A premium commerce platform built for ambitious brands. Sell beautifully, scale confidently.
+          <p className="mt-4 max-w-sm text-sm text-muted-foreground leading-relaxed">
+            A premium commerce platform crafted for ambitious brands. Sell beautifully, scale confidently.
           </p>
         </div>
         <div>
@@ -17,6 +17,7 @@ export function Footer() {
             <li><a href="/#features" className="hover:text-foreground">Features</a></li>
             <li><a href="/#pricing" className="hover:text-foreground">Pricing</a></li>
             <li><a href="/shop" className="hover:text-foreground">Live demo</a></li>
+            <li><a href="/dashboard" className="hover:text-foreground">Dashboard</a></li>
           </ul>
         </div>
         <div>
@@ -30,7 +31,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border/60">
         <div className="container-page py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Nordal Commerce. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Elgnstr Commerce. All rights reserved.</p>
           <p>Crafted for ambitious teams.</p>
         </div>
       </div>
