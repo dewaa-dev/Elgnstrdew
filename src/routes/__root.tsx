@@ -58,9 +58,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nordal — Premium commerce, beautifully built" },
+      { title: "Elgnstr — Premium commerce, beautifully built" },
       { name: "description", content: "A modern, enterprise-grade e-commerce platform for ambitious brands. Sell beautifully, scale confidently." },
-      { property: "og:title", content: "Nordal — Premium commerce, beautifully built" },
+      { property: "og:title", content: "Elgnstr — Premium commerce, beautifully built" },
       { property: "og:description", content: "Enterprise-grade e-commerce for ambitious brands." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -71,7 +71,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap",
       },
     ],
   }),
