@@ -68,8 +68,8 @@ function CollaboratePage() {
               <p className="text-sm text-muted-foreground mt-2">No commitment. We'll listen first.</p>
               <div className="mt-8 grid gap-4">
                 {[
-                  { l: "Full name", t: "text", ph: "Anya Setiawan" },
-                  { l: "Work email", t: "email", ph: "anya@brand.com" },
+                  { l: "Full name", t: "text", ph: "Dewa Pratama" },
+                  { l: "Work email", t: "email", ph: "dewa@brand.com" },
                   { l: "Company", t: "text", ph: "Halcyon Goods" },
                 ].map((f) => (
                   <label key={f.l} className="block">
