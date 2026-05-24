@@ -128,7 +128,7 @@ function OverviewView() {
   ];
   return (
     <>
-      <SectionHeader eyebrow="This month" title="Hello, Anya" action={<span className="text-xs text-success inline-flex items-center gap-1"><TrendingUp className="size-3" /> 24.6% vs last month</span>} />
+      <SectionHeader eyebrow="This month" title="Hello, Dewa" action={<span className="text-xs text-success inline-flex items-center gap-1"><TrendingUp className="size-3" /> 24.6% vs last month</span>} />
       <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
         {stats.map((s) => (
           <div key={s.l} className="rounded-xl border border-border p-5 bg-background">
@@ -159,7 +159,7 @@ function OverviewView() {
 }
 
 const mockOrders = [
-  { id: "EL-10284", customer: "Anya Setiawan", total: 4890000, status: "Fulfilled", date: "2 hours ago" },
+  { id: "EL-10284", customer: "Dewa Pratama", total: 4890000, status: "Fulfilled", date: "2 hours ago" },
   { id: "EL-10283", customer: "Marcus Wijaya", total: 1290000, status: "Processing", date: "4 hours ago" },
   { id: "EL-10282", customer: "Lila Hartono", total: 2890000, status: "Fulfilled", date: "Yesterday" },
   { id: "EL-10281", customer: "Dewi Putri", total: 590000, status: "Shipped", date: "Yesterday" },
@@ -259,7 +259,7 @@ function ProductsView() {
 }
 
 const mockCustomers = [
-  { name: "Anya Setiawan", email: "anya@halcyon.id", orders: 14, spent: 28490000 },
+  { name: "Dewa Pratama", email: "dewa@halcyon.id", orders: 14, spent: 28490000 },
   { name: "Marcus Wijaya", email: "marcus@maison.co", orders: 9, spent: 18900000 },
   { name: "Lila Hartono", email: "lila@vellum.id", orders: 22, spent: 41200000 },
   { name: "Dewi Putri", email: "dewi@northco.id", orders: 6, spent: 8900000 },
