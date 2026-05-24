@@ -7,8 +7,8 @@ export const Route = createFileRoute("/shop")({
   component: ShopPage,
   head: () => ({
     meta: [
-      { title: "Shop — Nordal" },
-      { name: "description", content: "Curated objects for everyday excellence. Browse the full Nordal demo collection." },
+      { title: "Shop — Elgnstr" },
+      { name: "description", content: "Curated objects for everyday excellence. Browse the full Elgnstr demo collection." },
     ],
   }),
 });
