@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ShopRouteImport } from './routes/shop'
+import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as CollaborateRouteImport } from './routes/collaborate'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductIdRouteImport } from './routes/product.$id'
@@ -17,6 +18,11 @@ import { Route as ProductIdRouteImport } from './routes/product.$id'
 const ShopRoute = ShopRouteImport.update({
   id: '/shop',
   path: '/shop',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CollaborateRoute = CollaborateRouteImport.update({
@@ -38,12 +44,14 @@ const ProductIdRoute = ProductIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/collaborate': typeof CollaborateRoute
+  '/dashboard': typeof DashboardRoute
   '/shop': typeof ShopRoute
   '/product/$id': typeof ProductIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/collaborate': typeof CollaborateRoute
+  '/dashboard': typeof DashboardRoute
   '/shop': typeof ShopRoute
   '/product/$id': typeof ProductIdRoute
 }
@@ -51,20 +59,28 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/collaborate': typeof CollaborateRoute
+  '/dashboard': typeof DashboardRoute
   '/shop': typeof ShopRoute
   '/product/$id': typeof ProductIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/collaborate' | '/shop' | '/product/$id'
+  fullPaths: '/' | '/collaborate' | '/dashboard' | '/shop' | '/product/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/collaborate' | '/shop' | '/product/$id'
-  id: '__root__' | '/' | '/collaborate' | '/shop' | '/product/$id'
+  to: '/' | '/collaborate' | '/dashboard' | '/shop' | '/product/$id'
+  id:
+    | '__root__'
+    | '/'
+    | '/collaborate'
+    | '/dashboard'
+    | '/shop'
+    | '/product/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CollaborateRoute: typeof CollaborateRoute
+  DashboardRoute: typeof DashboardRoute
   ShopRoute: typeof ShopRoute
   ProductIdRoute: typeof ProductIdRoute
 }
@@ -76,6 +92,13 @@ declare module '@tanstack/react-router' {
       path: '/shop'
       fullPath: '/shop'
       preLoaderRoute: typeof ShopRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/collaborate': {
@@ -105,6 +128,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CollaborateRoute: CollaborateRoute,
+  DashboardRoute: DashboardRoute,
   ShopRoute: ShopRoute,
   ProductIdRoute: ProductIdRoute,
 }
