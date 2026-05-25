@@ -5,7 +5,7 @@ export function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-2.5">
             <span className="size-7 rounded-full bg-gold shadow-gold" />
-            <span className="font-display text-2xl tracking-tight">Elgnstr</span>
+            <span className="font-display text-2xl tracking-tight">Dewstore</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground leading-relaxed">
             A premium commerce platform crafted for ambitious brands. Sell beautifully, scale confidently.
@@ -31,7 +31,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border/60">
         <div className="container-page py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Elgnstr Commerce. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Dewstore. All rights reserved.</p>
           <p>Crafted for ambitious teams.</p>
         </div>
       </div>

@@ -19,8 +19,8 @@ export const Route = createFileRoute("/dashboard")({
   component: DashboardPage,
   head: () => ({
     meta: [
-      { title: "Dashboard — Elgnstr" },
-      { name: "description", content: "Manage orders, products, customers and analytics from the Elgnstr command center." },
+      { title: "Dashboard — Dewstore" },
+      { name: "description", content: "Manage orders, products, customers and analytics from the Dewstore command center." },
     ],
   }),
 });
@@ -45,7 +45,7 @@ function DashboardPage() {
         <div className="flex items-center justify-between px-6 py-4 border-b border-border bg-surface/40">
           <div className="flex items-center gap-3">
             <span className="size-2.5 rounded-full bg-gold" />
-            <p className="text-sm font-medium">elgnstr.app / {tab}</p>
+            <p className="text-sm font-medium">Dewstore.app / {tab}</p>
           </div>
           <div className="hidden sm:flex items-center gap-2 text-xs text-muted-foreground">
             <span className="size-1.5 rounded-full bg-success" /> Live · synced just now
@@ -341,8 +341,8 @@ function SettingsView() {
       <SectionHeader eyebrow="Workspace" title="Settings" />
       <div className="mt-8 max-w-xl space-y-6">
         {[
-          { label: "Store name", value: "Elgnstr Atelier" },
-          { label: "Support email", value: "concierge@elgnstr.app" },
+          { label: "Store name", value: "Dewstore Atelier" },
+          { label: "Support email", value: "concierge@Dewstore.app" },
           { label: "Default currency", value: "Indonesian Rupiah (IDR)" },
           { label: "Time zone", value: "Asia/Jakarta (GMT+7)" },
         ].map((f) => (

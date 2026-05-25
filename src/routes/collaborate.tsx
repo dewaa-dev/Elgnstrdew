@@ -6,8 +6,8 @@ export const Route = createFileRoute("/collaborate")({
   component: CollaboratePage,
   head: () => ({
     meta: [
-      { title: "Collaborate — Elgnstr" },
-      { name: "description", content: "Partner with the Elgnstr team to launch or scale your commerce brand." },
+      { title: "Collaborate — Dewstore" },
+      { name: "description", content: "Partner with the Dewstore team to launch or scale your commerce brand." },
     ],
   }),
 });

@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Elgnstr — Premium commerce, beautifully built" },
+      { title: "Dewstore — Premium commerce, beautifully built" },
       { name: "description", content: "Enterprise-grade e-commerce for ambitious brands. Trusted by modern teams to ship, sell and scale." },
     ],
   }),
@@ -26,7 +26,7 @@ const features = [
 const logos = ["Atlas", "North&Co", "Maison", "Vellum", "Halcyon", "Soren"];
 
 const testimonials = [
-  { quote: "We moved from three platforms to Elgnstr in a weekend. Our checkout conversion jumped 32%.", name: "Dewa Pratama", role: "CEO, Halcyon Goods" },
+  { quote: "We moved from three platforms to Dewstore in a weekend. Our checkout conversion jumped 32%.", name: "Dewa Pratama", role: "CEO, Halcyon Goods" },
   { quote: "The dashboard feels like Linear for commerce. Our ops team finally enjoys their tools.", name: "Marcus Wijaya", role: "Head of Ops, Maison" },
   { quote: "It looks like a brand we already wanted to be. That changed everything.", name: "Lila Hartono", role: "Founder, Vellum" },
 ];
@@ -57,7 +57,7 @@ function Index() {
               Commerce, <em className="italic text-gold">refined</em> for ambitious brands.
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground leading-relaxed">
-              Elgnstr is a premium commerce platform that helps modern teams launch beautiful stores,
+              Dewstore is a premium commerce platform that helps modern teams launch beautiful stores,
               automate operations, and grow with confidence — without the bloat.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">

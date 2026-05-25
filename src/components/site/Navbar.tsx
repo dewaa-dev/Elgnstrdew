@@ -35,7 +35,7 @@ export function Navbar() {
       <div className="container-page flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5">
           <span className="size-7 rounded-full bg-gold shadow-gold" />
-          <span className="font-display text-2xl tracking-tight">Elgnstr</span>
+          <span className="font-display text-2xl tracking-tight">Dewstore</span>
         </Link>
         <nav className="hidden md:flex items-center gap-7 text-sm text-muted-foreground">
           <Link to="/dashboard" className="hover:text-foreground transition-colors" activeProps={{ className: "text-foreground" }}>Dashboard</Link>

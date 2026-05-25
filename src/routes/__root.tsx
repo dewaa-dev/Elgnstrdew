@@ -58,9 +58,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Elgnstr — Premium commerce, beautifully built" },
+      { title: "Dewstore — Premium commerce, beautifully built" },
       { name: "description", content: "A modern, enterprise-grade e-commerce platform for ambitious brands. Sell beautifully, scale confidently." },
-      { property: "og:title", content: "Elgnstr — Premium commerce, beautifully built" },
+      { property: "og:title", content: "Dewstore — Premium commerce, beautifully built" },
       { property: "og:description", content: "Enterprise-grade e-commerce for ambitious brands." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
